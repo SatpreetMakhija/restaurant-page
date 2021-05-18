@@ -1,3 +1,5 @@
+import { home } from './home'
+
 function createHomepage () {
 
     //get hold of content-div
@@ -12,7 +14,7 @@ function createHomepage () {
     navbar.setAttribute("class" , "nav-bar");
     
 
-    let navbarArray = ['Home', 'Menu', 'About Us'];
+    let navbarArray = ['Home', 'Menu', 'About'];
    
     for (var i = 0; i< navbarArray.length; i++) {
         let btn = document.createElement("button");
@@ -33,12 +35,15 @@ function createHomepage () {
     content.appendChild(mainContent);
 
   
+    
 
     //add footer
     let footer = document.createElement("footer");
-    footer.innerHTML = "Made by Lover";
+    footer.innerHTML = "Made by a Witcher";
     content.appendChild(footer);
 
+    // //add Home
+    // home();
 
 
 };

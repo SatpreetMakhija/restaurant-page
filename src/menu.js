@@ -4,7 +4,8 @@ import {removeAllChildNodes, makeAllOtherTabsInactive} from './helperfns';
 function createMenu() {
 
     const menu = document.createElement("div");
-    menu.textContent = "Here's the menu for you";
+    menu.setAttribute("class", "main-content-tab")
+    menu.textContent = "Here's the menu for you. It's blank for now.";
 
     return menu
 
